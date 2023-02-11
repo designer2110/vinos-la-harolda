@@ -26,3 +26,7 @@
     display: flex;
     text-decoration: none;
 }
+
+.navbar-toggle-icon {
+    background: url('../../assets/img/menu-50.png');
+}
