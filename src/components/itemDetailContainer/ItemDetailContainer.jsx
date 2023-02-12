@@ -6,6 +6,10 @@ import Button, { ButtonChild } from "../button/Button";
 import ItemCount from "../itemCount/ItemCount";
 import "./itemdetail.css";
 
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function ItemDetailContainer() {
   const [product, setProduct] = useState({});
   const [isInCart, setIsInCart] = useState(false);
@@ -21,12 +25,23 @@ function ItemDetailContainer() {
   if (itemInCart) stockUpdated = product.stock - itemInCart.count;
   else stockUpdated = product.stock;
 
+  const showToast = () => {
+    toast('Proceder al checkout', {
+        data: {
+            title: 'Hello World Again',
+            text: 'We are here again with another article'
+        }
+    });
+};
+
   // onAddtoCart
   function handleAddToCart(count) {
     setIsInCart(true);
     alert(`Agregaste ${count} de ${product.title} al carrito`);
     product.count = count;
     addItem(product);
+
+    showToast();
   }
 
   useEffect(() => {
@@ -67,6 +82,9 @@ function ItemDetailContainer() {
   return (
 
     <div className="card-detail_main">
+      <Link to="/cart">
+    <ToastContainer autoClose={8000}/>
+    </Link>
       <div className="card-detail_img">
         <img className="img" src={product.imgurl} alt={product.title} />
       </div>
