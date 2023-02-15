@@ -34,4 +34,5 @@ color: white;
 .navbar-toggler {
     border: 1;
     background-image: url('../../assets/img/menu-50.png');
+    text-decoration: solid;
 }
