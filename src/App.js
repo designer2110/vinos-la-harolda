@@ -13,6 +13,7 @@ import CartContainer from "./components/cartContainer/CartContainer";
 import OrderDetails from "./components/orderDetails/OrderDetails";
 import { exportData, exportDataWithBatch, exportDataWithBatch2 } from "./services/firebase";
 import ItemListContainerByPrice from "./components/ItemListContainer/ItemListContainer";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   function handleLogin(username) {

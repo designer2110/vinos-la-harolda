@@ -27,6 +27,11 @@
     text-decoration: none;
 }
 
-.navbar-toggle-icon {
-    background: url('../../assets/img/menu-50.png');
+.navbar-toggler collapsed{
+color: white;
+}
+
+.navbar-toggler {
+    border: 1;
+    background-image: url('../../assets/img/menu-50.png');
 }
