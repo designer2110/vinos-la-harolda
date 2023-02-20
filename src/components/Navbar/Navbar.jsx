@@ -49,7 +49,9 @@ function NavbarComp ({onLogin}) {
         </form>
           </Nav>
           <Nav>
+          <Link to="/cart" className='a'>
           <span className="nav-item"><img className="cart" src={cart}></img>{getTotalItems()}</span>
+          </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
