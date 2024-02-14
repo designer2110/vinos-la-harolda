@@ -2,12 +2,16 @@ import React from "react";
 import { useState } from "react";
 import FlexWrapper from "../flexWrapper/FlexWrapper";
 import Card from "../Card/Card";
+import './ItemList.css';
 
 function ItemList(props) {
   const [query, setQuery] = useState("");
   return (
     <div>
-      <input type="text" placeholder="Search..." className="search" onChange={(e) => setQuery(e.target.value)}></input>
+       <div class="search">
+        <input type="text" placeholder="Buscar productos..." className="search1" onChange={(e) => setQuery(e.target.value)}></input>
+        <i class="fa fa-search"></i>
+      </div>
     <FlexWrapper>
       {props.products.filter(product=>product.title.toLowerCase().includes(query)).map((item) => (
         <Card key={item.id} {...item} />

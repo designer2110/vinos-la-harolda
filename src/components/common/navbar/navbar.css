@@ -1,0 +1,15 @@
+li {
+    display: inline;
+    padding: 80px;
+    color: red;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+a {
+    font-size: xx-large;
+    color: rgba(135, 149, 130, 1);
+}

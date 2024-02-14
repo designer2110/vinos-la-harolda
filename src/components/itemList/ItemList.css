@@ -1,0 +1,42 @@
+.search1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+    background-color: rgba(50, 54, 31, 0.06);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+.search{
+    position: relative;
+    }
+
+    .search input{
+
+        height: 60px;
+        text-indent: 25px;
+        border: 2px solid #d6d4d4;
+        border-radius: 15px;
+
+
+       }
+    
+       .search input:focus{
+
+        box-shadow: none;
+        border: 2px solid #d6d4d4;
+        outline : none;
+
+
+       }
+
+
+       
+       .search .fa-search{
+
+        position: relative;
+        right: 30px;
+
+       }

@@ -123,7 +123,7 @@ function ItemListContainer() {
 
   return (
     <FlexWrapper column>
-      {notification.type && <Notification notification={notification} />}
+      {/* {notification.type && <Notification notification={notification} />} */}
 
       {isLoading ? (
         <FlexWrapper>
@@ -132,7 +132,6 @@ function ItemListContainer() {
       ) : (
         <ItemList products={products} />
       )}
-    <Zocalo/>
     <Footer/>
     </FlexWrapper>
 

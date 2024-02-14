@@ -8,11 +8,40 @@ import {
   MDBRow,
   MDBBtn
 } from 'mdb-react-ui-kit';
+import { Link } from "react-router-dom";
+import "./filtro.css";
 
 export default function Footer() {
   return (
-    <MDBFooter className='text-center' color='white' bgColor='dark'>
-      <MDBContainer className='p-4'>
+    <MDBFooter className='text-center' color='white' bgColor='gray'>
+     
+
+      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+      {/* <section className='filtro'> */}
+            {/* <a>Filter by price:</a>
+          <Link to="/byPrice/100">
+            Less than 100
+          </Link>
+          <Link to="/byPrice/50">
+            Less than 50
+          </Link> */}
+          
+          <li className="nav-item">
+          Páginas: 
+        </li>
+      <Link to="/page/1">
+        <li className="nav-item">
+          1
+        </li>
+      </Link>
+      <li className="nav-item">,</li>
+      <Link to="/page/2">
+        <li className="nav-item">
+          2
+        </li>
+      </Link>
+        {/* </section> */}
+
         <section className='mb-4'>
           <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
             <MDBIcon fab icon='facebook-f' />
@@ -39,6 +68,7 @@ export default function Footer() {
           </MDBBtn>
         </section>
 
+        
         <section className=''>
           <form action=''>
             <MDBRow className='d-flex justify-content-center'>
@@ -60,16 +90,6 @@ export default function Footer() {
             </MDBRow>
           </form>
         </section>
-
-        <section className='mb-4'>
-          <p>
-            Lala shop es un emprendimiento de distintos tipos de productos, donde la calidad es nuestro
-            distintivo, si te interesa participá en nuestras Redes Sociales!
-          </p>
-        </section>
-      </MDBContainer>
-
-      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
         Design by D. Román all rights reserved
       </div>
     </MDBFooter>

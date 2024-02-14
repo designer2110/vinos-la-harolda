@@ -45,26 +45,14 @@ function ItemDetailContainer() {
   }
 
   useEffect(() => {
-    if(itemid ==='2UUPhQBxTFiQ0c2hPxaG' ||
-      itemid ===  '3SVbEhLz073v7ieKdxHF' ||
-      itemid ===  '48wNx3fwydHatQKzKD2G' ||
-      itemid ===  '5Jq7H2fcatrw8NjiINEm' ||
-      itemid ===  '62jQ9oulwhIc7gqCLX1u' ||
-      itemid ===  '8TgRbeeyP4FSUij8VEin' ||
-      itemid ===  'BzujOgPlfcl7KEPQkjdx' ||
-      itemid ===  'CCIiNeOodhIQUBcnEYkC' ||
-      itemid ===  'GlrQOqWzhRfGwzHf8LSV' ||
-      itemid ===  'T6mGibRg2nsCDpuvv3dV' ||
-      itemid ===  'X1CPHNzDczvsYO1jjKGP' ||
-      itemid ===  'XW644AdQNX3KVtyJODMC' ||
-      itemid ===  'Zz3CkZ4v8bTnn5Mjrd5i' ||
-      itemid ===  'cBii64Hin9BiyfDj0CG3' ||
-      itemid ===  'fKppDpP8nRvvmpeq0R0Q' ||
-      itemid ===  'h8PxJ3dLUj6IUYYMC1v5' ||
-      itemid ===  'iG53Ou73jdEwtjzScz4W' ||
-      itemid ===  'o26Cdx0uw629prDiZ9xY' ||
-      itemid ===  'v2t6j7evWbyF7vzgG8f9' ||
-      itemid ===  'zydEJ2haeCE2340S1g13'
+    if(itemid ==='2RTo5AvKVDxOXKVfmy0V' ||
+      itemid ===  'KENuBafRFeXdAuKClZAV' ||
+      itemid ===  'U6x1HgwJc2pAIRl2X32I' ||
+      itemid ===  'XlPwwOeQSVPZt9vTgjTH' ||
+      itemid ===  'bjp0NOT7g7MgGb6PT22J' ||
+      itemid ===  'lOffx9APQefZKDYb2nMc' ||
+      itemid ===  'nplaZDuj4MFCo9QpTP9p' ||
+      itemid ===  'oUFW2JxcGlnAT1M9iygB'
       ) {
     getSingleItem(itemid)
       .then((respuesta) => {

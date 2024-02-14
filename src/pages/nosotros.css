@@ -1,0 +1,24 @@
+p {
+    font-size: large;
+    font-weight: 400;
+    font: 1.5em sans-serif;
+    width: 650px;
+    text-align: left;
+    padding-top: 100px;
+    float: left;
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#foto {
+    width: 550px;
+    align-self:center;
+    display: block;
+     float: left;
+}
+
+

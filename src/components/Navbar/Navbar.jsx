@@ -19,7 +19,7 @@ function NavbarComp ({onLogin}) {
       
     return (
       <div>
-         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+         <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
       <Container>
         <Link to="/page/1" className='a'>
         <Navbar.Brand className='NavbarBrand'>Lala shop</Navbar.Brand>

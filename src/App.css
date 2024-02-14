@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  width: 80%;
+  background-color: rgba(167, 168, 153, 0.09);
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .App-logo {
@@ -14,7 +19,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +39,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  align-content: center;
+  min-height: 100vh;
+
+}
+
+#root {
+  display: flex;
+  justify-content: center;
 }
